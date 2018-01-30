@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
-using System;
 
 [Serializable]
-public class CellData  {
+public class CellData {
 
     public int X;
     public int Y;
@@ -12,16 +10,19 @@ public class CellData  {
 
     public bool IsValid = true;
 
-    public CellData() { }
+    public CellData() {
 
-    public CellData(int _xPos, int _yPos, Vector3 _worldPos){
+    }
+
+    public CellData(int _xPos, int _yPos, Vector3 _worldPosition) {
         X = _xPos;
         Y = _yPos;
-        WorldPosition = _worldPos;
+        WorldPosition = _worldPosition;
     }
 
-    public void SetValidity(bool _isValid)
-    {
+    public void SetValidity(bool _isValid) {
         IsValid = _isValid;
     }
+
 }
+
