@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PhaseManager : MonoBehaviour {
 
+    public PlayerController playerController;
+
     public enum State
     {
         Setup,

@@ -6,7 +6,7 @@ using DG.Tweening;
 public class PlayerController : MonoBehaviour {
 
     public GridController gridController;
-
+    public bool isPlaying;
     public string name;
     public int XPos;
     public int YPos;
@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour {
             {
                 transform.DOMove(gridController.GetWorldPosition(XPos, YPos), 0.6f).SetEase(Ease.Linear);
                 moves = moves + 1;
+                CustomLogger.Log("Mi muovo in (0):(1)", XPos, YPos);
             }
             else
             {
