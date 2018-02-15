@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PhaseManager : MonoBehaviour {
 
-    public PlayerController playerController;
-
     public enum State
     {
         Setup,
@@ -88,7 +86,9 @@ public class PhaseManager : MonoBehaviour {
             CurrentState = State.Spell;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
             CurrentState = State.End;
+        }
         OnStateUpdate();
     }
 

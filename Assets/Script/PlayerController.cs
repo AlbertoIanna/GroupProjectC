@@ -6,12 +6,13 @@ using DG.Tweening;
 public class PlayerController : MonoBehaviour {
 
     public GridController gridController;
-    public bool isPlaying;
+    public bool isPlaying = false;
+    private bool IsMoving;
     public string name;
     public int XPos;
     public int YPos;
     public int moves;
-    private bool IsMoving;
+    
     int XPos_old;
     int YPos_old;
 
