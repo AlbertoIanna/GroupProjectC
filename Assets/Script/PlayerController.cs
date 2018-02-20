@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 
 public class PlayerController : MonoBehaviour {
-
+    
     public GridController gridController;
     public bool isPlaying = false;
     private bool IsMoving;
